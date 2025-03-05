@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>Laura's Happy Adventures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<SCRIPT language="JavaScript">
+<!--
+function appel(url) {
+
+        window.open(url, '_self').focus();
+}
+
+function test()
+{
+var repA = 0;
+var repB = 0;
+var repC = 0;
+var diffAB= 0;
+var diffTC = 0;
+var repT= 0;
+
+    for(x=0; x<document.aventuriere.elements.length; x++)
+    {
+        if(document.aventuriere.elements[x].checked)
+        {
+            if(document.aventuriere.elements[x].value == "A")
+            {
+                    repA ++;
+            }
+            if(document.aventuriere.elements[x].value == "B")
+            {
+                    repB ++;
+            }
+            if(document.aventuriere.elements[x].value == "C")
+            {
+                    repC ++;
+            }
+        }
+    }
+    var repT = repA+repB+repC;
+
+    diffAB = Math.max(repA, repB)
+    diffTC  = Math.max(diffAB,repC)
+
+    if(repT <= 9)
+    {
+	   appel('erreur.html');
+    }
+    else
+    {
+        if(diffTC == repC)
+        {
+           location="rep_c.html";
+        }
+        if(diffTC == repB)
+        {
+	   location="rep_b.html";
+        }
+	if(diffTC == repA)
+	{
+	   location="rep_a.html";
+	}
+    }       
+}       
+//-->
+</script>
+
+
+
+
+  <script language="JavaScript">
+<!--
+function MM_preloadImages() { //v1.2
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    var preloadArray = new Array();
+    for (var i=0; i<imgFiles.length; i++) {
+      preloadArray[i] = new Image;
+      preloadArray[i].src = imgFiles[i];
+    }
+  }
+}
+
+function MM_swapImage() { //v1.2
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i < (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray; //used for restore
+}
+
+function MM_swapImgRestore() { //v1.2
+  if (document.MM_swapImgData != null)
+    for (var i=0; i<(document.MM_swapImgData.length-1); i+=2)
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+}
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#CACAF4" text="000000" link="#800040" vlink="#E60073" alink="#AC0056">
+
+<script language='JavaScript'>
+  MM_preloadImages('images/preced2.gif');
+</script>
+
+
+<div align="center"> 
+  <table border="0" width="445" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td> 
+<div align="right"><font face="Arial, Helvetica, sans-serif" size="1"><a href="../index.html" target="_parent">back</a></font></div> 
+ 
+             
+<center>
+          <img src="images/bienvenue.gif" width="384" height="68"><br>
+          <br>
+        </center>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="74%">
+              <table border="0" width="100%" cellspacing="3" cellpadding="0">
+                <tr>
+                  <td width="47%"><img src="images/laura.gif" width="150" height="174" alt="../coinlaura/Laura" border="0" align="left"></td>
+                  <td width="53%"><b><font face="Comic sans MS, Arial, Helvetica, sans-serif" color="#B00058" size="4">
+Are you eager to find out more about yourself?  Well, hurry up and answer the questions and find out just who you are!</font></b></td></tr>
+              </table>
+        </td>
+
+            <td width="26%" align="center" valign="middle">
+       <a href="javascript:appel('popup.html')" onMouseOver="MM_swapImage('document.ici','document.ici','images/preced2.gif','MM_swapImage1'); window.status='Clique ici pour retrouver les tests pr�c�dents!'; return true;" onMouseOut="MM_swapImgRestore()">
+              <img src="images/preced.gif" width="113" height="87" name="ici" border="0" alt="D'autres tests!"></a><br>
+              <br>
+		<img src="images/trait.gif" width="112" height="25"><br>
+              <br>
+              <img src="images/bientot.gif" width="112" height="76" border="0" alt="Bient&ocirc;t, un nouveau test!"> 
+            </td>
+          </tr>
+        </table>
+   
+     
+        </td>
+    </tr>
+  </table>
+  <table border="0" width="445" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td> 
+
+        <center>
+          <p><br>
+            <img src="images/ligne.gif" width="397" height="15"><br>
+            <br>
+            <img src="images/quelle.gif" width="445" height="40"></p>
+	  </center>
+          
+        <p><font face="Comic sans MS, Arial, Helvetica, sans-serif" color="#B00058" size="4"> 
+          <b>Are you fearless or do you tread carefully? A go-getter, a cautious 
+          adventurer or a dreamer? Quick, do this test and find out just what 
+          kind of adventurer you are!</b> </font></p>
+          
+        <p><font face="Comic sans MS, Arial, Helvetica, sans-serif" size="3"> 
+          Click on the icon to the left of the answer that you think is best. 
+          If you make a mistake, no problem: just click on the answer that you 
+          want to choose - it's the last answer that counts! Once you've finished, 
+          click on the big question mark at the end of the test: you'll get your 
+          personal profile straightaway! <b><br>
+          <br>
+          <font size="5" color="#1599A8"> 
+          <center>
+            Off you go! 
+          </center>
+          </font><br>
+          </b></font></p>
+		
+
+
+          
+<!--FORMULAIRE -->
+<form method="post" action="" name="aventuriere">
+          <font face="Comic sans MS, Arial, Helvetica, sans-serif" size="3" color="#B00058"> 
+          <!--QUESTION 1 --> 
+          <p><font color="#82265A"><b><img src="images/un.gif" width="14" height="37" align="absbottom"> 
+            You move into a new house...</b></font><br>
+            <input type="radio" name="UN" value="B">
+            The first room you go to is your new bedroom. <BR>
+            <input type="radio" name="UN" value="C">
+            You look at each room with your parents. <br>
+            <input type="radio" name="UN" value="A">
+            You charge up the stairs to go and hunt for treasures in the attic! 
+          </p>
+          <!--QUESTION 2 --> 
+          <p><font color="#82265A"><b><img src="images/deux.gif" width="29" height="36" align="absbottom"> 
+            Your Mom sends you to the corner store. You take your bike and... 
+            </b></font><br>
+            <input type="radio" name="DEUX" value="A">
+            Decide to go for a little ride round while you're out: there are always 
+            new places to discover! <br>
+            <input type="radio" name="DEUX" value="C">
+            Come straight back with the shopping so as not to get lost. <img src="images/laitier.gif" width="150" height="92" align="right" alt="le laitier"> 
+            <br>
+            <input type="radio" name="DEUX" value="B">
+            Take the opportunity to call in on your friend who lives just nearby. 
+            <!--QUESTION 3 --> 
+          <p><img src="images/trois.gif" width="22" height="34" align="absbottom"><font color="#82265A"><b> 
+            Your favourite sports are: </b></font><br>
+            <input type="radio" name="TROIS" value="C">
+            Dancing and gymnastics: you take part in sports all year round! <br>
+            <input type="radio" name="TROIS" value="A">
+            Skiing or mountain biking: you like wide open spaces! <br>
+            <input type="radio" name="TROIS" value="B">
+            Basketball and volleyball: playing games with your friends is great 
+            fun! <!--QUESTION 4 --> 
+          <p><img src="images/quat.gif" width="27" height="36" align="absbottom"><font color="#82265A"><b> 
+            It's night-time and you have to go and look for something in the garden, 
+            when suddenly you hear a strange noise... </b></font><br>
+            <input type="radio" name="QUATRE" value="B">
+            You pay no attention and carry on with what you're doing: it's probably 
+            a cat ... <br>
+            <input type="radio" name="QUATRE" value="A">
+            You have to go and have a look to make sure: you hurry towards the 
+            noise... <br>
+            <input type="radio" name="QUATRE" value="C">
+            You scurry back to the house as fast as possible! <img src="images/chat.gif" width="100" height="55" align="right"
+><!--QUESTION 5--> 
+          <p><b><font color="#82265A"><img src="images/cinq.gif" width="27" height="36" align="absbottom"> 
+            A picnic in the woods is great opportunity to:</font></b><br>
+            <input type="radio" name="CINQ" value="C">
+            Go for a walk with your family. <br>
+            <input type="radio" name="CINQ" value="B">
+            Climb trees and make a fort... <br>
+            <input type="radio" name="CINQ" value="A">
+            Do some exploring! <!--QUESTION 6 --> 
+          <p><img src="images/six.gif" width="26" height="34" align="absbottom"><font color="#82265A"><b> 
+            If you went to a desert island, you would take: </b></font> <br>
+            <input type="radio" name="SIX" value="A">
+            A penknife to make tools and a wooden hut. <br>
+            <input type="radio" name="SIX" value="C">
+            A book so you wouldn't get bored. <br>
+            <input type="radio" name="SIX" value="B">
+            A compass so you would not get lost. <!--QUESTION 7 --> 
+          <p><img src="images/sept.gif" width="20" height="34" align="absbottom"><font color="#82265A"><b> 
+            You'd love to live in: </b></font><br>
+            <input type="radio" name="SEPT" value="A">
+            A hut in a big enchanted forest with loads of haunted manor houses 
+            to explore. <br>
+            <input type="radio" name="SEPT" value="B">
+            A fortified castle with huge rooms and secret passages, where you 
+            could have fantastic parties with your friends. <br>
+            <input type="radio" name="SEPT" value="C">
+            A big palace where you could live like a princess! <!--QUESTION 8 --> 
+          <p><img src="images/huit.gif" width="23" height="35" align="absbottom"><b><font color="#82265A"> 
+            Your dream holiday would be: </font></b><br>
+            <input type="radio" name="HUIT" value="C">
+            A huge villa next to a fine sandy beach where you could bask in the 
+            sun. <br>
+            <input type="radio" name="HUIT" value="A">
+            A holiday the other side of the world, in search of undiscovered lands...<br>
+            <input type="radio" name="HUIT" value="B">
+            A holiday village for a sports trip. <!--QUESTION 9 --> 
+          <p><img src="images/neuf.gif" width="23" height="39" align="absbottom"><font color="#82265A"><b> 
+            If you were an animal, you would be: </b></font> <img src="images/couac.gif" width="100" height="159" align="right"><br>
+            <input type="radio" name="NEUF" value="C">
+            A cat so you could sit curled up on your owner's knee, purring in 
+            front of the fire. <br>
+            <input type="radio" name="NEUF" value="A">
+            A bird so you could fly high over the planet and land wherever you 
+            want. <br>
+            <input type="radio" name="NEUF" value="B">
+            A wolf for the fun of living in the wild. <!--QUESTION 10 --> 
+          <p><img src="images/dix.gif" width="30" height="36" align="absbottom"><b><font color="#82265A"> 
+            Your parents offer you a skiing holiday at a club: </font></b><br>
+            <input type="radio" name="DIX" value="B">
+            Sounds like a great idea: you love skiing! But you'd prefer to have 
+            one or two of your friends with you. <br>
+            <input type="radio" name="DIX" value="C">
+            Out of the question: you'd rather go and learn to ski with your family. 
+            <br>
+            <input type="radio" name="DIX" value="A">
+            Fantastic! You'll be able to ski and make lots of new friends! 
+          </font> 
+          <p align="right"><A HREF="javascript:
+test();" onMouseOver="window.status='Clique ici pour conna�tre tes r�sultats';return true;" target="_self"><img src="images/hein.gif" width="58" height="98" border="0" alt="Tes r&eacute;sultats" align="right"></A>
+	<font face="Comic sans MS, Arial, Helvetica, sans-serif" size="4" color="#82265A"><b>Click here <br>
+            to see what your <br>
+            answers mean! </b></font> 
+        </form>
+
+
+</td>
+    </tr>
+  </table>
+ 
+</div>
+</body>
+</html>
