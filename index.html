@@ -29,66 +29,84 @@
             }
 
             var elem = document.iframe; // Make the body go full screen.
-            requestFullScreen(elem);
-            
+            requestFullScreen(elem);  
         </script>
 
 
-        <!-- Cambiare src dell'iframe -->
+        <!-- Change iframe's src -->
         <script>
-            function changeFrameContent(source, site) {
-                // get a reference to the iframe element and home button:
-                var iframeElem = document.getElementById("main_frame_id");
+            function changeFrameContent(site) {
+                // get a reference to the iframe element, home button and downlaod button:
+                var iframeScreen = document.getElementById("main_frame_id");
                 var home_button_fun= document.getElementById("home_button");
                 var link_old_button = document.getElementById("link_old");
+                var link_downl_button = document.getElementById("link_download");
 
-                //change the old button's link based on the site:
+                //change the iFrame screen, the old button's link and the download link, based on the site:
                 switch (site){
                     case "laura_EN":
+                        iframeScreen.src ="./Laura_web_EN/index.html";
+                        home_button_fun.onclick= function() {window.open("./Laura_web_EN/index.html", "main_frame_name")};
                         link_old_button.href="https://web.archive.org/web/20031226171009/http://laura.ubi.com/";
+                        link_downl_button.href="https://github.com/playmo90strilogy/Laura_Happy_Adventures_US_Old_Website/archive/refs/heads/main.zip"
                         break;
                     
                     case "hype_noflash":
+                        iframeScreen.src ="./Hype_web/noflash.html";
+                        home_button_fun.onclick= function() {window.open("./Hype_web/noflash.html", "main_frame_name")};
                         link_old_button.href="https://web.archive.org/web/20040328210845/http://hype.ubi.com/";
+                        link_downl_button.href="https://github.com/playmo90strilogy/Hype_The_Time_Quest_Old_Website/archive/refs/heads/main.zip";
                         break;
 
                     case "hype_EN":
+                        iframeScreen.src ="./Hype_web/flash/flash_hype.html";
+                        home_button_fun.onclick= function() {window.open("./Hype_web/flash/flash_hype.html", "main_frame_name")};
                         link_old_button.href="https://web.archive.org/web/20041021105428/http://hype.ubi.com:80/flash/hype.swf";
+                        link_downl_button.href="https://github.com/playmo90strilogy/Hype_The_Time_Quest_Old_Website/archive/refs/heads/main.zip";
                         break;
 
                     case "alex_EN":
-                        link_old_button.href="https://web.archive.org/web/20041012112956/http://www.playmobil-interactive.com/alex/";    
+                        iframeScreen.src ="./Alex_web_EN/index.html";
+                        home_button_fun.onclick= function() {window.open("./Alex_web_EN/index.html", "main_frame_name")};
+                        link_old_button.href="https://web.archive.org/web/20041012112956/http://www.playmobil-interactive.com/alex/"; 
+                        link_downl_button.href="https://github.com/playmo90strilogy/Alex_Builds_His_Farm_US_Old_Website/archive/refs/heads/main.zip";   
                         break;
 
                     case "alex_FR":
+                        iframeScreen.src ="./Alex_web_FR/index.html";
+                        home_button_fun.onclick= function() {window.open("./Alex_web_FR/index.html", "main_frame_name")};
                         link_old_button.href="https://web.archive.org/web/20041016055812/http://sites.ubisoft.fr/alex/";
+                        link_downl_button.href="https://github.com/playmo90strilogy/Alex_Builds_His_Farm_FR_Old_Website/archive/refs/heads/main.zip";
                         break;
 
                     case "hype_SW":
+                        iframeScreen.src ="./Hype_web/flashSW/flash_hype.html";
+                        home_button_fun.onclick= function() {window.open("./Hype_web/flashSW/flash_hype.html", "main_frame_name")};
                         link_old_button.href="https://web.archive.org/web/20050816193919/http://www.playmobil-interactive.com:80/hype/sw/flash/hypeswd.swf";
+                        link_downl_button.href="https://github.com/playmo90strilogy/Hype_The_Time_Quest_Old_Website/archive/refs/heads/main.zip";
                         break;
 
                     case "hype_DK":
+                        iframeScreen.src ="./Hype_web/flashDK/flash_hype.html";
+                        home_button_fun.onclick= function() {window.open("./Hype_web/flashDK/flash_hype.html", "main_frame_name")};
                         link_old_button.href="https://web.archive.org/web/20050516085906/http://www.playmobil-interactive.com:80/hype/dk/flash/hypedk.swf";
+                        link_downl_button.href="https://github.com/playmo90strilogy/Hype_The_Time_Quest_Old_Website/archive/refs/heads/main.zip";
                         break;
 
                     default:
+                        iframeScreen.src="./Hype_web/game/index.html";
                         break;
                 }
 
-                // update the elements' src:
-                iframeElem.src = source;
-                iframeElem.style= "border: 2px solid gray;";
-                iframeElem.style.backgroundColor = "white";
-                home_button_fun.onclick= function() {window.open(source, "main_frame_name")};
+                // update the elements:
+                
+                iframeScreen.style= "border: 2px solid gray;";
+                iframeScreen.style.backgroundColor = "white";
+                link_old_button.target="main_frame_name";
             }
 
         </script>
 
-
-
-        <h1>This is a Heading</h1>
-            <p>This is a paragraph.</p>
 
         
         <div class="background">
@@ -112,20 +130,21 @@
                     </div>
 
                     <div id="lang_buttons">
-                        <input type="image" src="./icons/lang_US.png" title="Laura US" class="lang_EN_button_laura lang_buttons_general" onclick="changeFrameContent('./Laura_web_EN/index.html', 'laura_EN')" onmouseover="this.src='./icons/lang_US_over.png';" onmouseout="this.src='./icons/lang_US.png';"/>
-                        <input type="image" src="./icons/no-flash_icon.png" title="Hype No-Flash" class="no_flash_button lang_buttons_general" onclick="changeFrameContent('./Hype_web/flash/flash_hype.html','hype_noflash')" onmouseover="this.src='./icons/no-flash_icon_over.png';" onmouseout="this.src='./icons/no-flash_icon.png';"/>
-                        <input type="image" src="./icons/lang_US.png" title="Hype US" class="lang_EN_button_hype lang_buttons_general" onclick="changeFrameContent('./Hype_web/flash/flash_hype.html','hype_EN')" onmouseover="this.src='./icons/lang_US_over.png';" onmouseout="this.src='./icons/lang_US.png';"/>
-                        <input type="image" src="./icons/lang_US.png" title="Alex US" class="lang_EN_button_alex lang_buttons_general" onclick="changeFrameContent('./Alex_web_EN/index.html','alex_EN')" onmouseover="this.src='./icons/lang_US_over.png';" onmouseout="this.src='./icons/lang_US.png';"/>
-                        <input type="image" src="./icons/lang_FR.png" title="Alex FR" class="lang_FR_button_alex lang_buttons_general" onclick="changeFrameContent('./Alex_web_FR/saved_resource.html','alex_FR')" onmouseover="this.src='./icons/lang_FR_over.png';" onmouseout="this.src='./icons/lang_FR.png';"/>
-                        <input type="image" src="./icons/lang_SW.png" title="Hype SW" class="lang_SW_button_hype lang_buttons_general" onclick="changeFrameContent('./Hype_web/flash/flash_hype.html','hype_SW')" onmouseover="this.src='./icons/lang_SW_over.png';" onmouseout="this.src='./icons/lang_SW.png';"/>
-                        <input type="image" src="./icons/lang_DK.png" title="Hype DK" class="lang_DK_button_hype lang_buttons_general" onclick="changeFrameContent('./Hype_web/flash/flash_hype.html','hype_DK')" onmouseover="this.src='./icons/lang_DK_over.png';" onmouseout="this.src='./icons/lang_DK.png';"/>
+                        <input type="image" src="./icons/lang_US.png" title="Laura US" class="lang_EN_button_laura lang_buttons_general" onclick="changeFrameContent('laura_EN')" onmouseover="this.src='./icons/lang_US_over.png';" onmouseout="this.src='./icons/lang_US.png';"/>
+                        <input type="image" src="./icons/no-flash_icon.png" title="Hype No-Flash" class="no_flash_button lang_buttons_general" onclick="changeFrameContent('hype_noflash')" onmouseover="this.src='./icons/no-flash_icon_over.png';" onmouseout="this.src='./icons/no-flash_icon.png';"/>
+                        <input type="image" src="./icons/lang_US.png" title="Hype US" class="lang_EN_button_hype lang_buttons_general" onclick="changeFrameContent('hype_EN')" onmouseover="this.src='./icons/lang_US_over.png';" onmouseout="this.src='./icons/lang_US.png';"/>
+                        <input type="image" src="./icons/lang_US.png" title="Alex US" class="lang_EN_button_alex lang_buttons_general" onclick="changeFrameContent('alex_EN')" onmouseover="this.src='./icons/lang_US_over.png';" onmouseout="this.src='./icons/lang_US.png';"/>
+                        <input type="image" src="./icons/lang_FR.png" title="Alex FR" class="lang_FR_button_alex lang_buttons_general" onclick="changeFrameContent('alex_FR')" onmouseover="this.src='./icons/lang_FR_over.png';" onmouseout="this.src='./icons/lang_FR.png';"/>
+                        <input type="image" src="./icons/lang_SW.png" title="Hype SW" class="lang_SW_button_hype lang_buttons_general" onclick="changeFrameContent('hype_SW')" onmouseover="this.src='./icons/lang_SW_over.png';" onmouseout="this.src='./icons/lang_SW.png';"/>
+                        <input type="image" src="./icons/lang_DK.png" title="Hype DK" class="lang_DK_button_hype lang_buttons_general" onclick="changeFrameContent('hype_DK')" onmouseover="this.src='./icons/lang_DK_over.png';" onmouseout="this.src='./icons/lang_DK.png';"/>
                     </div>
 
                     <div id="last_buttons">
-                        <img type="image" src="./icons/download.png" title="Download Site" class="download_button last_buttons_general" onmouseover="this.src='./icons/download_over.png';" onmouseout="this.src='./icons/download.png';"/> 
-                        <a href="" id="link_old" target="main_frame_name"><img type="image" src="./icons/broken.png" title="See Original Site" class="broken_button last_buttons_general" onmouseover="this.src='./icons/broken_over.png';" onmouseout="this.src='./icons/broken.png';"/></a>
+                        <a href="" id="link_download" target="_self"><img type="image" src="./icons/download.png" title="Download Site" class="download_button last_buttons_general" onmouseover="this.src='./icons/download_over.png';" onmouseout="this.src='./icons/download.png';"/></a>
+                        <a href="" id="link_old" target="_self"><img type="image" src="./icons/broken.png" title="See original broken site" class="broken_button last_buttons_general" onmouseover="this.src='./icons/broken_over.png';" onmouseout="this.src='./icons/broken.png';"/></a>
 
                     </div>
+
             </div>
         </div>       
 
