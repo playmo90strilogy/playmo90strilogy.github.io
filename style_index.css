@@ -1,15 +1,13 @@
 .background {
    /* background-color: black;*/
    background-color: black;
+   margin:auto;
 }
 .desk{
     background-image: url('./images/desk.png');
     position: absolute;
-
     width:1480px;
     height:2100px;
-    
-
 }
 
 .background_PC {
