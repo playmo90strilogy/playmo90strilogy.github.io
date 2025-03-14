@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="application/javascript;charset=utf-8">
+        <meta content="text/html;charset=utf-8">
+        <meta content="text/javascript;charset=utf-8">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+            }
+            #container {
+                width: inherit;
+                height: inherit;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+<body>
+    <div id="container">
+
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.RufflePlayer.config = {
+            "autoplay": "on", 
+            "splashScreen": false, 
+            "unmuteOverlay":"hidden",
+            };
+        </script>
+
+        <embed src="hypeswd.swf" width=100% height=100%></embed>
+    </div>
+</body>
+
+</html>
