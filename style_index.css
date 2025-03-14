@@ -1,6 +1,7 @@
 .background {
    /* background-color: black;*/
    background-color: black;
+   margin: auto;
 }
 .desk{
     background-image: url('./images/desk.png');
