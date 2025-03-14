@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>Laura's Happy Adventures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+<!--
+var erreurs = 8;
+var diff = new Array(0,0,0,0,0,0,0,0);
+
+function reste(no)
+{
+	var image = diff[no];
+	if(image == 0 && erreurs > 0)
+	{
+		erreurs -= 1;
+		diff[no]=1;
+	}
+	return erreurs;
+}
+
+/*function result()
+{	
+	location.href="erreurs" + erreurs + ".html";
+}*/
+
+if (document.images) {
+Imere_02_02 = new Image(30, 47);Imere_02_02.src = 'images3/miroir.jpg';
+Imere_02_02o = new Image(30, 47);Imere_02_02o.src = 'images3/miroir_over.jpg';
+Imere_03_06 = new Image(28, 26);Imere_03_06.src = 'images3/porte.jpg';
+Imere_03_06o = new Image(28, 26);Imere_03_06o.src = 'images3/porte_over.jpg';
+Imere_06_12 = new Image(28, 26);Imere_06_12.src = 'images3/fleur.jpg';
+Imere_06_12o = new Image(28, 26);Imere_06_12o.src = 'images3/fleur_over.jpg';
+Imere_08_13 = new Image(27, 34);Imere_08_13.src = 'images3/mur.jpg';
+Imere_08_13o = new Image(27, 34);Imere_08_13o.src = 'images3/mur_over.jpg';
+Imere_09_07 = new Image(28, 33);Imere_09_07.src = 'images3/chaise.jpg';
+Imere_09_07o = new Image(28, 33);Imere_09_07o.src = 'images3/chaise_over.jpg';
+Imere_10_04 = new Image(30, 27);Imere_10_04.src = 'images3/laura.jpg';
+Imere_10_04o = new Image(30, 27);Imere_10_04o.src = 'images3/laura_over.jpg';
+Imere_11_14 = new Image(50, 32);Imere_11_14.src = 'images3/tasse.jpg';
+Imere_11_14o = new Image(50, 32);Imere_11_14o.src = 'images3/tasse_over.jpg';
+Imere_12_10 = new Image(28, 27);Imere_12_10.src = 'images3/plume.jpg';
+Imere_12_10o = new Image(28, 27);Imere_12_10o.src = 'images3/plume_over.jpg';
+}
+function di(id,name){
+  if (document.images) {document.images[id].src=eval(name+".src"); }
+}
+
+// function that displays status bar message
+
+function dm(msgStr) {
+  document.returnValue = false;
+  if (document.images) { 
+     window.status = msgStr;
+     document.returnValue = true;
+  }
+}
+var showMsg = navigator.userAgent != "Mozilla/4.0 (compatible; MSIE 4.0; Mac_PowerPC)";
+function dmim(msgStr) {
+  document.returnValue = false;
+  if (showMsg) { 
+    window.status = msgStr;
+    document.returnValue = true;
+  }
+}
+
+// stop hiding -->
+
+function MM_preloadImages() { //v2.0
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j<imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function MM_swapImgRestore() { //v2.0
+  if (document.MM_swapImgData != null)
+    for (var i=0; i<(document.MM_swapImgData.length-1); i+=2)
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+}
+
+function MM_swapImage() { //v2.0
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i < (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray; //used for restore
+}
+
+function result()
+{
+    resultat = window.open("erreurs" + erreurs + ".html", '_self').focus();
+
+        if (navigator.appVersion.substring(1,0)=="3")
+        {
+        resultat.focus();   
+        }
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#AFFE98" link="#009FA8" vlink="#006D73" alink="#00BAC4" onLoad="MM_preloadImages('file:///D%7C/laura/lauraonline/coinjeux/differences/images/clic2.gif','#911863559220')">
+<div align="center">
+  <table width="445" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td>
+        <div align="right"><font face="Arial, Helvetica, sans-serif" size="1"><a href="old.html" target="_self">back</a></font></div> 
+        <div align="center">
+          <p><img src="images/titre.gif" width="284" height="68" alt="The Spot The Difference Game"></p>
+	</div>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              
+            <td width="150"><img src="images/laura.gif" width="150" height="230" align="left" alt="Laura"></td>
+              <td width="10">&nbsp;</td>
+              
+            <td><font face="comic Sans MS, arial, helvetica, sans-serif" size="4" color="#006060"><b>Laura 
+              tried to copy this picture. Unfortunately, she made some mistakes. 
+              Help her to find all the differences you can on the bottom picture.</b></font></td>
+            </tr>
+          </table>
+          
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td><font face="comic Sans MS, arial, helvetica, sans-serif" size="4" color="#006060"><b>Look 
+              carefully and click on all the differences you find: a happy face 
+              will appear if you're right.</b></font></td>
+            <td width="10"></td>
+            <td valign="top"><img src="images/bientot.gif" width="100" height="110" alt="A new game very soon" border="0"></td>
+          </tr>
+        </table>
+        <p align="center"> <font face="comic Sans MS, arial, helvetica, sans-serif" size="5" color="#B40064"><b>Now 
+          it's your turn to look! </b></font></p>
+        <p align="center"><img src="images/ligne.gif" width="397" height="15"></p>
+	<br>
+          <br>
+        <center>
+        <table border="5" cellspacing="0" cellpadding="0" bordercolor="#D04090">
+          <tr> 
+              <td><a href="#a"><img src="images/mere1.jpg" width="400" height="250" border="0" name="chambre1"></a></td>
+          </tr>
+        </table>
+	</center>
+   
+        <div align="center"><br>
+          <a name=a></a> 
+          <table border="5" cellspacing="0" cellpadding="0" bordercolor="#D04090">
+            <tr>
+              <td> 
+                <table border="0" cellpadding="0" cellspacing="0" width="400">
+                  <tr><!-- spacing row, 0 height. --> 
+                    <td><img src="images3/mere_00.gif" width="4" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="30" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="13" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="30" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="38" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="12" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="16" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="12" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="86" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="28" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="53" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="8" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="15" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="5" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="7" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="38" height="1" border="0"></td>
+                    <td><img src="images3/mere_00.gif" width="5" height="1" border="0"></td>
+                  </tr>
+                  <tr><!-- row 01 --> 
+                    <td rowspan="1" colspan="17"><a href="#a"><img name="Nmere_01_01" src="images3/mere_01_01.jpg" width="400" height="4" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="4" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 02 --> 
+                    <td rowspan="14" colspan="1"><a href="#a"><img name="Nmere_02_01" src="images3/mere_02_01.jpg" width="4" height="246" border="0"></a></td>
+                    <td rowspan="2" colspan="1"><a href="#a" onClick=" reste(1);di('Nmere_02_02','Imere_02_02o');dm('Bravo!');return true;"><img name="Nmere_02_02" src="images3/miroir.jpg" width="30" height="47" border="0"></a></td>
+                    <td rowspan="1" colspan="15"><a href="#a"><img name="Nmere_02_03" src="images3/mere_02_03.jpg" width="366" height="28" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="28" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 03 --> 
+                    <td rowspan="7" colspan="3"><a href="#a"><img name="Nmere_03_03" src="images3/mere_03_03.jpg" width="81" height="165" border="0"></a></td>
+                    <td rowspan="2" colspan="2"><a href="#a" onClick=" reste(2);di('Nmere_03_06','Imere_03_06o');dm('Bravo!'); return true;"><img name="Nmere_03_06" src="images3/porte.jpg" width="28" height="26" border="0"></a></td>
+                    <td rowspan="3" colspan="10"><a href="#a"><img name="Nmere_03_08" src="images3/mere_03_08.jpg" width="257" height="63" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="19" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 04 --> 
+                    <td rowspan="12" colspan="1"><a href="#a"><img name="Nmere_04_02" src="images3/mere_04_02.jpg" width="30" height="199" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="7" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 05 --> 
+                    <td rowspan="4" colspan="2"><a href="#a"><img name="Nmere_05_06" src="images3/mere_05_06.jpg" width="28" height="129" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="37" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 06 --> 
+                    <td rowspan="3" colspan="4"><a href="#a"><img name="Nmere_06_08" src="images3/mere_06_08.jpg" width="179" height="92" border="0"></a></td>
+                    <td rowspan="1" colspan="3"><a href="#a" onClick=" reste(3);di('Nmere_06_12','Imere_06_12o');dm('Bravo!'); return true;"><img name="Nmere_06_12" src="images3/fleur.jpg" width="28" height="26" border="0"></a></td>
+                    <td rowspan="2" colspan="3"><a href="#a"><img name="Nmere_06_15" src="images3/mere_06_15.jpg" width="50" height="76" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="26" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 07 --> 
+                    <td rowspan="1" colspan="3"><a href="#a"><img name="Nmere_07_12" src="images3/mere_07_12.jpg" width="28" height="50" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="50" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 08 --> 
+                    <td rowspan="8" colspan="1"><a href="#a"><img name="Nmere_08_12" src="images3/mere_08_12.jpg" width="8" height="79" border="0"></a></td>
+                    <td rowspan="3" colspan="3"><a href="#a" onClick=" reste(4);di('Nmere_08_13','Imere_08_13o');dm('Bravo!'); return true;"><img name="Nmere_08_13" src="images3/mur.jpg" width="27" height="34" border="0"></a></td>
+                    <td rowspan="3" colspan="2"><a href="#a"><img name="Nmere_08_16" src="images3/mere_08_16.jpg" width="43" height="34" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="16" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 09 --> 
+                    <td rowspan="7" colspan="1"><a href="#a"><img name="Nmere_09_06" src="images3/mere_09_06.jpg" width="12" height="63" border="0"></a></td>
+                    <td rowspan="4" colspan="2"><a href="#a" onClick=" reste(5);di('Nmere_09_07','Imere_09_07o');dm('Bravo!'); return true;"><img name="Nmere_09_07" src="images3/chaise.jpg" width="28" height="33" border="0"></a></td>
+                    <td rowspan="3" colspan="3"><a href="#a"><img name="Nmere_09_09" src="images3/mere_09_09.jpg" width="167" height="23" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="10" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 10 --> 
+                    <td rowspan="6" colspan="1"><a href="#a"><img name="Nmere_10_03" src="images3/mere_10_03.jpg" width="13" height="53" border="0"></a></td>
+                    <td rowspan="4" colspan="1"><a href="#a" onClick=" reste(6);di('Nmere_10_04','Imere_10_04o');dm('Bravo!'); return true;"><img name="Nmere_10_04" src="images3/laura.jpg" width="30" height="27" border="0"></a></td>
+                    <td rowspan="6" colspan="1"><a href="#a"><img name="Nmere_10_05" src="images3/mere_10_05.jpg" width="38" height="53" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="8" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 11 --> 
+                    <td rowspan="5" colspan="1"><a href="#a"><img name="Nmere_11_13" src="images3/mere_11_13.jpg" width="15" height="45" border="0"></a></td>
+                    <td rowspan="4" colspan="3"><a href="#a" onClick=" reste(7);di('Nmere_11_14','Imere_11_14o');dm('Bravo!'); return true;"><img name="Nmere_11_14" src="images3/tasse.jpg" width="50" height="32" border="0" ></a></td>
+                    <td rowspan="5" colspan="1"><a href="#a"><img name="Nmere_11_17" src="images3/mere_11_17.jpg" width="5" height="45" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="5" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 12 --> 
+                    <td rowspan="4" colspan="1"><a href="#a"><img name="Nmere_12_09" src="images3/mere_12_09.jpg" width="86" height="40" border="0"></a></td>
+                    <td rowspan="3" colspan="1"><a href="#a" onClick=" reste(0);di('Nmere_12_10','Imere_12_10o');dm('Bravo!'); return true;"><img name="Nmere_12_10" src="images3/plume.jpg" width="28" height="27" border="0"></a></td>
+                    <td rowspan="4" colspan="1"><a href="#a"><img name="Nmere_12_11" src="images3/mere_12_11.jpg" width="53" height="40" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="10" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 13 --> 
+                    <td rowspan="3" colspan="2"><a href="#a"><img name="Nmere_13_07" src="images3/mere_13_07.jpg" width="28" height="30" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="4" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 14 --> 
+                    <td rowspan="2" colspan="1"><a href="#a"><img name="Nmere_14_04" src="images3/mere_14_04.jpg" width="30" height="26" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="13" border="0"></a></td>
+                  </tr>
+                  <tr><!-- row 15 --> 
+                    <td rowspan="1" colspan="1"><a href="#a"><img name="Nmere_15_10" src="images3/mere_15_10.jpg" width="28" height="13" border="0"></a></td>
+                    <td rowspan="1" colspan="3"><a href="#a"><img name="Nmere_15_14" src="images3/mere_15_14.jpg" width="50" height="13" border="0"></a></td>
+                    <td><a href="#a"><img src="images3/mere_00.gif" width="1" height="13" border="0"></a></td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p align="center"><font face="comic Sans MS, arial, helvetica, sans-serif" size="5" color="#B40064"><b> 
+          You think you found all the differences?</b></font><br>
+          <a href="javascript:result();"><img src="images/clic.gif" width="188" height="40" border="0" alt="Click here" name="clic"></a> 
+        </p>
+        <p align="center"><img src="images/ligne.gif" width="397" height="15"><br>
+          <a href="old.html" target="_self"><img src="images/old.gif" width="400" height="37" border="0" alt="Previous games"></a> 
+          <br>
+          <img src="images/ligne.gif" width="397" height="15"> </p>
+        <p align="center"><a href="../envolee/texte.html" target="_self"><img src="images/aussi.gif" width="320" height="64" border="0" alt="Another game"></a></p>	
+      
+      </td></tr>
+</table>
+
+<p>&nbsp;</p></div>
+
+</body>
+</html>
