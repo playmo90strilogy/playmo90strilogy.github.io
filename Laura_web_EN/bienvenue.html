@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Laura's Happy Adventures</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html">
+<SCRIPT LANGUAGE="JavaScript">
+
+var msg
+var passMSG
+
+function DoCmd(name)
+{
+	if (navigator.appName == "Netscape")
+		document.Ctrl.Do(name);
+	else
+		Ctrl.Do(name);
+}
+
+function Ctrl_onEvent(msg) {
+	// alert (passMSG);    // These lines can be useful
+	//self.status = msg; //for debugging.
+	if (msg == "Load Main") {
+	setTimeout('DoCmd(\'play obj=Laura_mdl pkg=Salut_toi_.pwc transition=0.30 heading=yes behave=Salut_toi_\');',2000);
+	setTimeout('passMSG = "Load Salut_toi_";',4000);
+	}
+	else if (msg == "Unclick Laura_mdl") {
+		if (passMSG == "Load Salut_toi_") {
+		DoCmd('play obj=Laura_mdl pkg=hands_shake_.pwc transition=0.30 heading=yes behave=hands_shake_');
+		setTimeout('passMSG = "Load hands_shake_";',3000);
+		}
+		if (passMSG == "Load hands_shake_") {
+		DoCmd('play obj=Laura_mdl pkg=waiting_.pwc transition=0.30 heading=yes behave=waiting_');
+		setTimeout('passMSG = "Load waiting_";',10000);
+		}
+		if (passMSG == "Load waiting_") {
+		DoCmd('play obj=Laura_mdl pkg=Salut_toi_.pwc transition=0.30 heading=yes behave=Salut_toi_');
+		setTimeout('passMSG = "Load Salut_toi_";',1000);
+		}
+	}
+}
+
+if (navigator.appName == "Microsoft Internet Explorer")
+{
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" FOR="Ctrl" EVENT="OnEvent(theEvent)">');
+	document.write('Ctrl_onEvent(theEvent);');
+	document.write('</SCR' + 'IPT>');
+}
+</SCRIPT>
+<!--
+<SCRIPT LANGUAGE="JavaScript">
+// This code will automatically start a Netscape SmartUpdate installation if PulsePlayer is not installed
+
+if (navigator.appName == "Netscape" && parseFloat(navigator.appVersion) >= 4.06) {
+	if ((navigator.mimeTypes["application/x-pulse-player"] == null) || (!navigator.mimeTypes["application/x-pulse-player"].enabledPlugin)) {
+		cfInst = true;cfTxt = "This page uses Pulse Player to display 3D content.  \nClick OK to start installation of Pulse Player.";
+		if (!cfInst || (document.cookie.indexOf("pulseinstall=decline") == -1 && confirm(cfTxt))) {
+			if (navigator.javaEnabled() && netscape.softupdate.Trigger.UpdateEnabled()) {
+				jfPath = "http://www.pulse3d.com/players/";langDir = "english/";ppcJar = "PulsePlayerNsMac.jar";w32Jar = "PulsePlayerNsWin.jar";
+				if ((navigator.appVersion.indexOf("Win9") != -1) || (navigator.appVersion.indexOf("WinNT") != -1)) jfPath += langDir + w32Jar;
+				else if (navigator.appVersion.indexOf("Macintosh") != -1) jfPath += langDir + ppcJar;
+				insTrig = netscape.softupdate.Trigger;
+				if(!(insTrig.StartSoftwareUpdate(jfPath, insTrig.DEFAULT_MODE))) alert("Netscape SmartUpdate installation has failed.  \nVisit www.pulse3d.com for other Pulse Player installation options.");
+			}
+		} else document.cookie = "pulseinstall=decline;path=/";
+	}
+}
+</SCRIPT>
+-->
+
+
+</head>
+
+<body bgcolor="#FFB4C9" text="#A01848" link="#A01848" vlink="#A01848" alink="#A01848">
+<div align="center"> <font color="#A01848"><br>
+  </font>
+  <table width="445" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		  <td width="325" valign="top">
+			  <p>
+				  <font face="Comic Sans MS, Arial, helvetica, sans-serif" size="2" color="#A01848">
+					  Enter
+					  the enchanted world of <b>PLAYMOBIL®</b> with Laura in her exciting
+					  web site! Learn more about the game <font size="3">
+						  <i>
+							  Laura's Happy
+							  Adventures
+						  </i>
+					  </font> and much more as you explore the 4 corners of
+					  Laura's world!<br>
+					  <br>
+					  <b>
+						  Explore Laura's World and watch Laura play! Take part in some fun
+						  activities, and find out what kind of adventurer you are! <br>
+						  <br>
+
+						  <b>
+							  <a href="contest/text.html" target="_self">
+								  Partecipate to our contest to have a chance to win the Grand Prize!
+							  </a><br>
+							  <br>
+							  <br>
+
+							  <a href="https://web.archive.org/web/20001001093501/http://www.kidsdomain.com/review/kdr/laurahappy.html" target="main_frame_name">
+								  <!--<a href="http://www.kidsdomain.com/review/kdr/laurahappy.html" target="_top">-->
+								  Check
+								  out the review on Kidsdomain!
+							  </a>
+						  </b>
+</font>
+			  </p>
+		  </td>
+		  <td width="120">
+			  <div align="right"><font face="comic Sans MS, arial, helvetica, sans-serif" size="6" color="#A01848"><img src="images/laura_dia.gif" width="143" height="204"></font></div>
+		  </td>
+
+		  <!--
+	<td width="170">
+	  <object name="Ctrl" classid="CLSID:D6016EE7-A8FF-11D1-B37E-A4759ECD7909" width="170" height="200" codebase="http://www.pulse3d.com/players/english/PulsePlayerAxWin.cab">
+	  <param name="URL" value="LauraUS.pwc">
+	  <param name="FrameRate" value="30">
+	  <param name="Hardware" value="1">
+	  <param name="BGcolor" value="0xFFB5CA">
+	  <embed mayscript name="Ctrl" width="170" height="200" src="LauraUS.pwc" framerate="30" hardware="0" bgcolor="0xFFB5CA" type="application/x-pulse-player" pluginspage="http://www.pulse3d.com/players"></embed>
+	  </object>
+	</td>
+	  -->
+	  </tr>
+  </table>
+</div>
+</body>
+</html>
