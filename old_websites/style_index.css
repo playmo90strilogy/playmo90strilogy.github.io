@@ -1,0 +1,152 @@
+.background {
+   background-color: #e6e6e6;
+   margin:auto;
+   padding-bottom: 100px;
+}
+
+.background_PC {
+    position: relative;
+    background-image: url('./images/old_pc.png');
+    width:1118px;
+    height:1492px;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top:20px;
+    /*left: 400px;
+    right: 500px;*/
+}
+.frame_PC {
+    position: relative;
+    background-color:transparent;
+    left: 130px;
+    top: 130px;
+    width:853px;
+    height:591px;
+}
+
+
+.screen_buttons_general{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 0%;
+}
+.button_back.screen_buttons_general {
+    top: 186px;
+    left: 448px;
+    width: 28px;
+    height: 28px;
+
+}
+.button_home.screen_buttons_general {
+    top: 190px;
+    left: 496px;
+    width: 35px;
+    height: 35px;
+
+}
+.button_fullScreen.screen_buttons_general {
+    top: 190px;
+    left: 540px;
+    width: 33px;
+    height: 33px;
+
+}
+
+.case_buttons_general{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 0%;
+}
+.button_laura.case_buttons_general {
+    top: 370px;
+    left: 120px;
+    width: 90px;
+    height: 86px;
+}
+.button_hype.case_buttons_general {
+    top: 373px;
+    left: 250px;
+    width: 80px;
+    height: 95px;
+}
+.button_alex.case_buttons_general {
+    top: 370px;
+    left: 360px;
+    width: 90px;
+    height: 75px;
+}
+
+.lang_buttons_general{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 0%;
+    width: 45px;
+    height: 45px;
+}
+.lang_EN_button_laura.lang_buttons_general {
+    top: 365px;
+    left: 140px;
+}
+.no_flash_button.lang_buttons_general{
+    top:365px;
+    left: 280px;
+}
+.lang_EN_button_hype.lang_buttons_general {
+    top: 365px;
+    left: 280px;
+}
+.lang_EN_button_alex.lang_buttons_general {
+    top: 365px;
+    left: 370px;
+}
+.lang_FR_button_alex.lang_buttons_general {
+    top: 365px;
+    left: 370px;
+}
+.lang_SW_button_hype.lang_buttons_general {
+    top: 415px;
+    left: 45px;
+}
+.lang_DK_button_hype.lang_buttons_general {
+    top: 415px;
+    left: 45px;
+}
+
+.last_buttons_general{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 0%;
+}
+.download_button.last_buttons_general {
+    width: 35px;
+    height: 35px;
+    top: 348px;
+    left: 904px;
+}
+.broken_button.last_buttons_general {
+    width: 40px;
+    height: 40px;
+    top: 351px;
+    left: 915px;
+}
