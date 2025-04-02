@@ -1,0 +1,377 @@
+.background {
+   background-color: #e6e6e6;
+   margin:auto;
+   padding-bottom: 100px;
+}
+
+.image_pc_div{
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    z-index: -1;
+}
+.image_pc{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.iframe_div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: 2;
+}
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+
+    /* IFRAME */
+    .frame_PC {
+    
+        background-color:transparent;
+        width:77%;
+        height: 34%;
+
+        margin-top: 12%;
+        margin-left:11.2%;
+        resize: both;
+        overflow: auto;
+        z-index: 2;
+    }
+
+    /* DOWNLOAD and OLD BUTTONS */
+    .last_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+    
+        top:75%;
+        
+    
+        justify-content:end;
+        display: flex;
+    
+        z-index: 4;
+    
+    }
+
+    /* LANGUAGES BUTTONS */
+    .lang_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:72.2%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+    
+        z-index: 4;
+    }
+
+    /* CASE ICONS */
+    .icons_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:66.8%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+    /* IFRAME */
+    /*.frame_PC {
+    
+        background-color:transparent;
+        width:77%;
+        height: 34.45%;
+
+        margin-top: 11.8%;
+        margin-left:11.2%;
+        resize: both;
+        overflow: auto;
+        z-index: 2;
+    }*/
+
+    /* DOWNLOAD and OLD BUTTONS */
+    /*.last_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+    
+        top:75.5%;
+        
+    
+        justify-content:end;
+        display: flex;
+    
+        z-index: 4;
+    
+    }*/
+
+    /* LANGUAGES BUTTONS */
+    /*.lang_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:72.8%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+    
+        z-index: 4;
+    }*/
+
+    /* CASE ICONS */
+    /*.icons_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:67%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+        align-items: baseline;
+    }*/
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    
+    /* IFRAME */
+    .frame_PC {
+        background-color:transparent;
+        width:77%;
+        height: 35.5%;
+        margin-top: 11.8%;
+        margin-left:11.2%;
+        resize: both;
+        overflow: auto;
+        z-index: 2;
+    }
+
+    /* DOWNLOAD and OLD BUTTONS */
+    .last_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:76%;
+        
+        justify-content:end;
+        display: flex;
+    
+        z-index: 4;
+    
+    }
+
+    /* LANGUAGES BUTTONS */
+    .lang_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:73.2%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+    
+        z-index: 4;
+    }
+    
+    /* CASE ICONS */
+    .icons_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:67.3%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+    /* IFRAME */
+    .frame_PC {
+    
+        background-color:transparent;
+        width:77%;
+        height: 36%;
+        /*height:27%;
+        max-height: 36%;*/
+        margin-top: 12%;
+        margin-left:11%;
+        resize: both;
+        overflow: auto;
+        z-index: 2;
+    }
+
+
+    /* DOWNLOAD and OLD BUTTONS */
+    .last_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:76.5%;
+    
+        justify-content:end;
+        display: flex;
+    
+        z-index: 4;
+    }
+
+    /* LANGUAGES BUTTONS */
+    .lang_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:73.6%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+    
+        z-index: 4;
+    }
+
+    /* CASE ICONS */
+    .icons_buttons_div{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        
+        top:67.6%;
+        padding-left: 5%;
+    
+        justify-content:left;
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+
+
+
+/* SCREEN BUTTONS */
+.screen_buttons_div{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    
+    top:51.6%;
+
+    justify-content: center;
+    display: flex;
+
+    z-index: 4;
+}
+.screen_buttons_general{
+    background-color: transparent;
+    border: none;
+
+    padding:2.7%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0%;
+    top:0;
+
+    width: 3%;
+    cursor: pointer;
+}
+
+
+/* DOWNLOAD and OLD BUTTONS */
+.last_buttons_general{
+    background-color: transparent;
+    border: none;
+    
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0%;
+
+    width: 3.5%;
+    cursor: pointer;
+
+}
+.download_button{
+    margin-right: 2.3%;
+}
+.broken_button{
+    margin-right: 9.7%;
+}
+
+
+
+/* CASE ICONS */
+.icons_buttons_general{
+    background-color: transparent;
+    width: 7%;
+    height: 7%;
+}
+.button_laura{
+    margin-left: 7%;
+    padding-bottom: 0.2%;
+}
+.button_hype{
+    margin-left: 13%;
+}
+.button_alex{
+    margin-left: 13%;
+}
+
+
+/* LANGUAGES BUTTONS */
+.lang_buttons_general{
+    background-color: transparent;
+    margin: 2%;
+    width: 19%;
+    cursor: pointer;
+}
+.laura_lang{
+    width: 20%;
+}
+.hype_lang{
+    width: 20%;
+}
+.alex_lang{
+    width: 20%;
+}
+
+.lang_EN_button_laura{
+    margin-left: 38.5%;
+}
+
+.no_flash_button{
+    margin-left: 28%;
+}
+.lang_SW_button_hype{
+    margin-left: 28%;
+}
+
+.lang_EN_button_alex{
+    margin-left: 28%;
+}
