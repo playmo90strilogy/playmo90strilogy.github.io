@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="./index.html">-->
+            
+        <meta content="text/html;charset=utf-8">
+        <meta content="text/javascript;charset=utf-8">
+
+        <link rel="stylesheet" href="./home/index_css.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="icon" type="image/x-icon" href="/icons/favicon/favicon.ico">
+        
+        <title>Playmo 90s Trilogy</title>
+
+    </head>
+    <body class="body_index" onload="changeOnResizing()">
+
+        <!-- SCRIPTS -->
+        <script src="./home/index_js.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+
+
+        <!-- TITLE PLAYMO 90S TRILOGY -->
+        <div class="title_div" id="title">
+            <input id="title_image_id" type="image" src="./home/images/title.png" class="title_image" onmouseover="this.src='./home/images/title_over.png';" onmouseout="this.src='./home/images/title.png';" onclick="javascript:changeFrameContent('./home/home.html')">
+        </div>
+
+        
+        <!-- 3 IMAGES MENU -->
+        <div id="menu_images" class="div_images_menu">
+
+            <!-- Background worlds image -->
+            <div id="background_menu" class="background_menu_div">
+                <img src="./home/images/bk_colored_9.png" class="menu_background_image">
+            </div>
+
+            <!-- Alex menu -->
+            <ul class="alex_ul_main">
+                <li class="alex_li_main">
+                    <div class="alex_image">
+                        <ul>
+                            <li><a href="javascript:changeFrameContent('./photos/alex_photos.html');" class="alex_a">Photos</a></li>
+                            <li><a href="javascript:changeFrameContent('./home/coming_soon.html');" class="alex_a">Creation</a></li>
+                            <li><a href="javascript:changeFrameContent('./cheats/alex_cheats.html');" class="alex_a">Cheat Codes</a></li>
+                            <li><a href="javascript:changeFrameContent('./home/coming_soon.html');" class="alex_a">Other</a></li>                          
+                        </ul>
+                    </div>
+                </li>
+            </ul> 
+
+            <!-- Hype menu -->
+            <ul class="hype_ul_main">
+                <li class="hype_li_main">
+                    <div class="hype_image">
+                        <ul>
+                            <li><a href="javascript:changeFrameContent('./photos/hype_photos.html');">Photos</a></li>
+                            <li><a href="javascript:changeFrameContent('./home/coming_soon.html');">Creation</a></li>
+                            <li><a href="javascript:changeFrameContent('./cheats/hype_cheats.html');">Cheat Codes</a></li>
+                            <li><a href="javascript:changeFrameContent('./home/coming_soon.html');">Other</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>  
+
+            <!-- Laura menu -->
+            <ul class="laura_ul_main">
+                <li class="laura_li_main">
+                    <div class="laura_image">
+                        <ul>
+                            <li><a href="javascript:changeFrameContent('./photos/laura_photos.html');">Photos</a></li>
+                            <li><a href="javascript:changeFrameContent('./home/coming_soon.html');">Creation</a></li>
+                            <li><a href="javascript:changeFrameContent('./cheats/laura_cheats.html');">Cheat Codes</a></li>
+                            <li><a href="javascript:changeFrameContent('./home/coming_soon.html');">Other</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>    
+        </div>
+
+
+        <!-- SCROLL MENU -->
+         <div class="scroll_buttons_div gradient_border" id="scroll_buttons_div_id">
+            <nav id="nav_id" class="menu">
+                <ol class="scroll_buttons_ol">
+                    <li class="menu-item"><a href="javascript:changeFrameContent('./home/home.html');" class="scroll_button_a" onmouseover="javascript:increaseDivWidth()" onmouseout="javascript:diminishDivWidth()" data-hover="  Home&#10; "></a></li><br>
+                    <li class="menu-item"><a href="javascript:changeFrameContent('./old_websites/index.html');" class="scroll_button_a" onmouseover="javascript:increaseDivWidth()" onmouseout="javascript:diminishDivWidth()" data-hover="Trilogy&#10;Old Sites"></a></li><br>
+                    <li class="menu-item"><a href="javascript:changeFrameContent('./home/coming_soon.html');" class="scroll_button_a" onmouseover="javascript:increaseDivWidth()" onmouseout="javascript:diminishDivWidth()" data-hover="Other&#10;Creations"></a></li><br>
+                    <li class="menu-item"><a href="javascript:changeFrameContent('./home/other_sites.html');" class="scroll_button_a" onmouseover="javascript:increaseDivWidth()" onmouseout="javascript:diminishDivWidth()" data-hover="Other&#10;Websites"></a></li><br>
+                    <li class="menu-item"><a href="javascript:goToTop();" class="scroll_button_a" onmouseover="javascript:increaseDivWidth()" onmouseout="javascript:diminishDivWidth()" data-hover="   Page  &#10;Top"></a></li><br>
+
+                </ol>
+            </nav>       
+        </div>
+
+        <!-- IFRAME -->
+        <div>
+        <iframe id="index_iframe_id" name="index_iframe_name" class="index_iframe" src="./home/home.html" onload="resizeIframe(this, true)" scrolling="no">Your browser doesn't support iframes.</iframe>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.instagram.com/playmo90strilogy" target="_blank" alt="Instagram"><i class="icon ion-social-instagram"></i></a>
+                    <a href="https://youtube.com/@playmo90strilogy?si=QxLTyR2ywx8AeA46" target="_blank" alt="YouTube"><i class="icon ion-social-youtube"></i></a>
+                    <a href="https://www.facebook.com/share/18JqrWB74N/" target="_blank" alt="Facebook"><i class="icon ion-social-facebook"></i></a>
+                    <a href="mailto:playmo90strilogy@gmail.com" alt="Email me at playmo90strilogy@gmail.com"><i class="icon ion-email"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="javascript:changeFrameContent('./home/home.html');">Home</a></li>
+                    <li class="list-inline-item"><a href="javascript:changeFrameContent('./home/about.html');">About</a></li>
+                    <li class="list-inline-item"><a href="javascript:changeFrameContent('./home/terms.html');">Terms</a></li>
+                    <li class="list-inline-item"><a href="javascript:changeFrameContent('./home/privacy_policy.html');">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="javascript:changeFrameContent('./home/disclaimer.html');">Disclaimer</a></li>
+                    <li class="list-inline-item"><a href="javascript:changeFrameContent('./home/donate.html');">Donate</a></li>
+                </ul>
+                <p class="copyright">non-profit fan website</p>
+            </footer>
+        </div>
+
+
+        <!-- DIV FOR ENLARGED IMAGES -->
+        <div id="enlargedImg_div_id" class="enlargedImg_div">
+            <!-- show previous image -->
+            <a href="javascript:changeImg(false)" id="backArrow_id" class="backArrow">&lt;</a> 
+
+            <div class="container_div">
+                <p id="close_image_id" class="close_image">Click the image to close it</p>
+                <img src="./home/images/1_1.jpg" id="enlargedImg_id" class="enlargedImg" onclick="javascript:reduceImg(this)" onmouseover="javascritp:showCaption(true)" onmouseleave="javascritp:showCaption(false)">
+                <p id="caption_image_id" class="caption_image"></p>
+            </div>
+            
+            <!-- show next image -->
+            <a href="javascript:changeImg(true)" id="nextArrow_id" class="nextArrow">&gt;</a> 
+        </div>
+
+        
+
+
+        
+    </body>
+</html>

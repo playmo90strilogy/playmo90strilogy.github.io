@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Game</title>
+        
+        <link rel="stylesheet" href="./game_css.css" type="text/css">
+
+    </head>
+
+
+    <body class="body_css">
+        <script src="./index.js"></script>
+        
+        <div id="game_div_id" class="main_div">
+            
+            <canvas id="canvas_game_id" class="canvas_game"></canvas>
+
+        </div>
+
+        <div id="title_screen_id" class="title_screen">
+            <img src="./images/wooden_frame.png" id="wooden_frame" class="wood_frame">
+
+            <div id="buttons_div_id" class="buttons">   
+                <input type="image" src="./images/button_controls.png" title="Controls" class="bottom_button" onclick="showPage(true,'tutorial')" onmouseover="this.src='./images/button_controls_hover.png';" onmouseout="this.src='./images/button_controls.png';"/>
+                <input type="image" src="./images/button_home.png" title="Go back to the site" class="bottom_button" onclick="window.history.back()" onmouseover="this.src='./images/button_home_hover.png';" onmouseout="this.src='./images/button_home.png';"/>
+                <input type="image" src="./images/button_sound_hover.png" title="Sound" id="audio_button" class="bottom_button" onclick="changeAudio(false)" onmouseover="this.src='./images/button_sound_off.png';" onmouseout="this.src='./images/button_sound_hover.png';"/>
+            </div>
+
+            <div id="play_div_id" class="play_div">
+                <input type="image" src="./images/button_about.png" title="Info" id="about_button" class="about_button" onclick="showPage(true, 'info')" onmouseover="this.src='./images/button_about_hover.png';" onmouseout="this.src='./images/button_about.png';"/>
+                <input type="image" src="./images/button_play.png" title="Play" id="play_button" class="play_button" onclick="gameplay(true)" onmouseover="this.src='./images/button_play_hover.png';" onmouseout="this.src='./images/button_play.png';"/>
+            </div>
+
+            <div id="close_div_id" class="close_button_div">
+                <input type="image" src="./images/button_close.png" title="Close" id="close_button" class="close_button" onclick="showPage(false,'tutorial')" onmouseover="this.src='./images/button_close_hover.png';" onmouseout="this.src='./images/button_close.png';"/>
+            </div>
+            <div id="tutorial_div_id" class="tutorial_div">
+                <h1 class="control_text">Controls</h1>
+            </div> 
+            <div class="tutorial_div">
+                <img src="./images/movement.gif" id="movement_id" class="mov_gif">
+            </div>
+            <div class="tutorial_div">
+                <img src="./images/fireball.gif" id="fireball_id" class="fire_gif">
+            </div>
+            <div class="tutorial_div">
+                <img src="./images/magic_blast.gif" id="magic_blast_id" class="magic_gif">
+            </div>
+
+
+            <div id="info_div_id" class="info_div">
+                <input type="image" src="./images/button_close.png" title="Close" id="close_button_info" class="close_button_info" onclick="showPage(false,'info')" onmouseover="this.src='./images/button_close_hover.png';" onmouseout="this.src='./images/button_close.png';"/>
+                <h1 class="info_text_title">Info</h1><br>
+                <p class="info_text">This game was created by <b>Playmo90sTrilogy</b><br> based on the accounts of the <b><i>"Hype - The Time Quest"</i></b> fans<br> that had played the actual game present <br>on the website, back in the days.
+                <br><br>Unfortunately the original game file <br>can't be found on the <i>Way Back Machine</i> anymore,<br> so I've tried to recreate something <br>that could deliver a similar experience<br> to those fans that still love this game <br>and wanted to go back in time for a little while... <br><br>(no sundial needed!)</p>
+            </div>
+
+            <div id="game_over_div_id" class="game_over_div">
+                <h1 class="game_over_text_title">GAME OVER</h1><br>
+                <h3 class="score" id="score_id">Score: </h3>
+                <input type="image" src="./images/button_close.png" title="Close" id="close_button_gameOver" class="close_button_gameOver" onclick="showPage(false,'game_over')" onmouseover="this.src='./images/button_close_hover.png';" onmouseout="this.src='./images/button_close.png';"/>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
+
