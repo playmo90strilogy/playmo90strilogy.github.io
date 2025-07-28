@@ -1,0 +1,48 @@
+
+.no_radius {    
+    border-radius: 5px;
+ }
+
+.pic_container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+
+ .high_res_pic{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* Prevents image from blocking mouse events */
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+ }
+
+ .svg_pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: all; /* Prevents SVG from blocking mouse events */
+ }
+
+ svg g{
+      stroke-opacity: 0;
+   }
+                            
+svg g:hover{
+   stroke-opacity: 0.8;
+}
+
+svg .cls-1 {
+      fill: rgba(0, 0, 0, 0);
+}
+
+svg .cls-2 {
+      fill: rgba(0, 0, 0, 0);
+      stroke: #ffffff;
+      stroke-miterlimit: 10;
+      stroke-width: 5px;
+}
