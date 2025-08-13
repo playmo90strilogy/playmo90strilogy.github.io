@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8">
+        <meta content="text/javascript;charset=utf-8">
+        
+        <link rel="stylesheet" href="../../home/index_css.css" type="text/css">
+        <link rel="stylesheet" href="./map_css.css" type="text/css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="icon" type="image/x-icon" href="/icons/favicon/favicon.ico">
+        
+        <title>Alex's World</title>
+
+    </head>
+    <body class="iframe_contentPage_body" >
+        <!-- SCRIPTS -->
+        <script src="../../home/index_js.js"></script>
+        <script src="../world_js.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+        
+        <!-- CONTENT -->
+        <div>
+            <center><h1>Alex's World</h1>
+
+            <!-- Display Location when on-mouse-over -->
+            <h2 id="location" style="color:#1f66bd;">&nbsp;</h2>
+
+            <p>Click on the areas of the map to navigate to different locations.</p>
+
+            <div class="pic_container" style="width: 75%;">
+                
+                <!-- High-res picture -->
+                <img src="./images/Map.png" class="high_res_pic">
+
+                <!-- SVG picture -->
+                <svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 1188" class="svg_pic">
+    
+                    <g id="Livello_2" data-name="Livello 2">
+                        <rect class="cls-1" width="1584" height="1188"/>
+                    </g>
+
+                    <a href="./house.html">
+                        <g id="House" data-name="Alex House" onmouseover="changeText('location','Alex\'s House')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="488,668 640,673 758,678 761,657 741,545 731,511 720,475 696,475 685,465 684,454 677,450 672,433 658,423 645,432 633,433 629,444 621,455 610,467 601,472 534,471 468,641 471,651"/>
+                        </g>
+                    </a>
+
+                    <a href="./pond.html">
+                        <g id="Pond" data-name="Pond" onmouseover="changeText('location','The Pond')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="762,652 857,660 869,669 885,667 919,669 947,680 954,683 992,683 1010,672 1008,658 1013,645 1014,630 1021,613 1021,602 1024,585 1024,571 1020,563 1024,550 1025,540 1022,526 1011,514 1001,504 994,491 973,484 966,473 947,468 934,459 928,457 931,451 920,436 892,435 882,440 860,446 846,442 824,424 797,423 783,417 757,420 740,423 704,419 673,417 625,419 604,419 595,469 603,468 613,459 621,448 627,434 639,433 656,423 667,430 677,451 685,461 695,473 722,473 730,509 741,540 760,637 762,645"/>
+                        </g>
+                    </a>
+
+                    <a href="./stable.html">
+                        <g id="Stable" data-name="Stable" onmouseover="changeText('location','The Stables')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="539,360 503,369 498,356 488,353 463,346 444,342 415,342 404,342 376,321 354,314 338,310 321,304 292,296 309,285 335,276 365,267 365,244 386,236 415,214 429,215 453,219 471,226 485,232 499,230 513,226 539,226 566,223 584,222 600,222 633,225 668,226 692,226 707,229 718,230 717,239 720,249 739,254 749,249 760,249 773,255 772,268 765,283 744,283 711,281 670,281 631,279 605,303 582,314 561,318 551,332 542,344"/>
+                        </g>
+                    </a>
+
+                    <a href="./henhouse.html">
+                        <g id="Hen_House" data-name="Hen_House" onmouseover="changeText('location','The Hen House')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="368,413 363,433 324,464 298,462 274,472 257,492 243,494 231,504 211,517 208,528 190,534 179,522 165,515 152,517 143,507 133,506 133,494 124,482 109,478 101,479 98,450 106,434 120,415 137,408 119,399 171,387 199,388 221,391 240,384 274,388 291,392 310,397 326,406 345,415"/>
+                        </g>
+                    </a>
+
+                    <a href="./garden.html">
+                        <g id="Garden" data-name="Garden" onmouseover="changeText('location','The Garden')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="305,713 273,761 267,771 266,782 233,791 200,796 171,802 159,806 137,819 123,830 103,841 108,858 62,931 70,935 80,956 155,960 187,914 249,910 271,919 294,919 302,915 315,914 338,915 351,933 370,949 389,953 411,953 421,953 440,959 461,963 475,960 489,977 513,978 540,982 561,981 579,975 612,950 646,919 679,910 713,898 737,886 769,877 791,870 811,859 832,852 843,841 854,827 868,813 874,795 879,781 874,760 858,749 850,745 847,732 842,718 833,724"/>
+                        </g>
+                    </a>
+
+                    <a href="./barn.html">
+                        <g id="Barn" data-name="Barn" onmouseover="changeText('location','The Barn')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="849,850 857,856 870,860 885,866 898,878 911,884 930,876 948,863 971,855 1006,853 1025,864 1032,870 1022,892 1080,895 1082,911 1124,905 1131,881 1136,864 1127,844 1126,832 1117,820 1141,818 1157,816 1182,817 1199,820 1238,823 1235,811 1231,800 1508,799 1562,1027 1545,1036 1516,1045 1503,1052 1485,1049 1478,1059 1468,1057 1443,1057 1433,1053 1414,1059 1394,1066 1377,1060 1355,1063 1331,1052 1310,1038 1292,1015 1274,996 1257,973 1222,953 1188,947 1163,949 1128,949 1097,947 1064,956 1057,964 1021,964 1033,979 1053,1006 1060,1026 1056,1042 1056,1076 1049,1098 1053,1111 1074,1133 1074,1164 533,1164 528,1140 528,1111 537,1079 549,1054 568,1023 590,989 619,970 656,953 679,942 699,931 719,919 738,917 758,905 780,897 805,883"/>
+                        </g>
+                    </a>
+
+                    <a href="./maze.html">
+                        <g id="Maze" data-name="Maze" onmouseover="changeText('location','The Maze')" onmouseout="changeBack('location')">
+                            <polygon class="cls-2" points="1524,418 1160,416 1149,450 1197,662 1201,669 1207,680 1209,690 1215,726 1233,791 1507,794 1563,1027 1569,1023 1567,529 1545,472"/>
+                        </g>
+                    </a>                  
+                </svg>
+
+            </div>
+            </center>
+
+        </div>
+
+    </body>
+</html>
